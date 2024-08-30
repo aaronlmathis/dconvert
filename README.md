@@ -83,5 +83,3 @@ This project is licensed under the GPL 3.0 License - see the LICENSE file for de
 
 ## Contact
 For any questions, feel free to contact the project maintainer.
-
-This is the complete README.md content without any code snippets or markdown-specific formatting.
