@@ -4,7 +4,7 @@
 
 ## Features
 
-- Convert between JSON, CSV, XML, HTML, and XLSX formats.
+- Convert between **JSON, CSV, XML, HTML, and XLSX** formats.
 - Support for newline-delimited JSON (`jsonlines`).
 - Option to include or exclude row indices in the output.
 - Automatic detection of input and output file formats based on file extensions.
@@ -36,16 +36,16 @@ The dconvert tool provides a flexible way to convert data files. Below is a comp
 The basic command structure includes specifying the input file, output file, and desired output format. Optional arguments allow you to specify the input file type, whether to use newline-delimited JSON, and whether to include the row index in the output.
 
 #### Required Arguments
-- --input: Path to the input file to be converted.
-- --outfile: Path to the converted output file.
-- --format: The desired output format. Accepted values are csv, json, html, xml, xlsx.
+- **--input or -i:** Path to the input file to be converted.
+- **--outfile or -o:** Path to the converted output file.
+- **--format or -f:** The desired output format. Accepted values are csv, json, html, xml, xlsx.
 
 #### Optional Arguments
-- --inputfiletype: The type of the input file. Accepted values are csv, json, html, xml, xlsx.
+- **--inputfiletype or -t**: The type of the input file. Accepted values are csv, json, html, xml, xlsx.
 If not provided, dconvert will try to infer the input file type from the file extension.
-- --jsonlines: Whether to output JSON as newline-delimited (true for newline-delimited, false for a single JSON array).
+- **--jsonlines or -l:** Whether to output JSON as newline-delimited (true for newline-delimited, false for a single JSON array).
 Defaults to false if not specified.
-- --index: Whether to include the row index in the output (true to include, false to exclude).
+- **--index:** Whether to include the row index in the output (true to include, false to exclude).
 Defaults to false if not specified.
 
 #### Examples
