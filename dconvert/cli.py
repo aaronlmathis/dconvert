@@ -70,7 +70,7 @@ class CLI:
         # Check if input file type is specified or can be inferred
         input_ext = os.path.splitext(parsed_args.input)[1].lower()
         if not parsed_args.inputfiletype:
-            if input_ext in ['.csv', '.json', '.html', '.xml', '.xlxs']:
+            if input_ext in ['.csv', '.json', '.html', '.xml', '.xlsx']:
                 parsed_args.inputfiletype = input_ext.lstrip('.')
             else:
                 raise ValueError(f"Could not infer input file type from file extension: {input_ext}. Please specify the input file type with --inputfiletype.")
