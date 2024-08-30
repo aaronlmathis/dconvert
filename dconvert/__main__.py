@@ -26,8 +26,8 @@
 ================================================================================
 """
 
-from dconvert import CLI
-from dconvert import DConvert
+from dconvert.cli import CLI
+from dconvert.dconvert import DConvert
 import os
 import sys
 
@@ -37,7 +37,6 @@ def main():
     try:
         args = cli.parse_args()  # Now works without needing to pass anything
         print(f"Converting {args.input} to {args.outfile} as {args.format} format.")
-        print(args.index)
         dconvert.convert(args.input, args.inputfiletype, args.outfile, args.format, args.jsonlines, args.index)
 
         
