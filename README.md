@@ -65,7 +65,7 @@ Convert an HTML file to XML and exclude the row indices.
 ```bash
 dconvert -i my_file.html -o my_file.xml
 ```
-##Error Handling
+## Error Handling
 If the output format is not specified and cannot be inferred from the output file extension, dconvert will raise an error. If the input file type is not specified and cannot be inferred from the input file extension, dconvert will raise an error.
 
 ## File Formats Supported
